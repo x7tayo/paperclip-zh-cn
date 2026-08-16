@@ -1,0 +1,10 @@
+node_modules/
+.npm-cache/
+src/
+scripts/
+tests/
+dictionary/
+dist/*.map
+vitest.config.ts
+esbuild.config.mjs
+tsconfig.json

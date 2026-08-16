@@ -1,0 +1,61 @@
+{
+  "name": "paperclip-zh-cn",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Paperclip UI 汉化插件 — 全局中文翻译覆写层，覆盖所有页面并兼容上游更新",
+  "paperclipPlugin": {
+    "manifest": "./dist/manifest.js",
+    "worker": "./dist/worker.js",
+    "ui": "./dist/ui/"
+  },
+  "scripts": {
+    "build": "node ./esbuild.config.mjs",
+    "dev": "node ./esbuild.config.mjs --watch",
+    "test": "vitest run",
+    "extract:strings": "node ./scripts/extract-strings.mjs",
+    "coverage:report": "node ./scripts/coverage-report.mjs"
+  },
+  "dependencies": {
+    "@paperclipai/plugin-sdk": "^2026.722.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.1",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "esbuild": "^0.28.1",
+    "jsdom": "^26.1.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "typescript": "^5.7.3",
+    "vitest": "^4.1.10"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "!dist/**/*.map"
+  ],
+  "main": "dist/worker.js",
+  "exports": {
+    ".": "./dist/worker.js",
+    "./ui": "./dist/ui/index.js"
+  },
+  "keywords": [
+    "paperclip",
+    "plugin",
+    "i18n",
+    "chinese",
+    "汉化",
+    "中文"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/siyu1011/paperclip-zh-cn.git"
+  },
+  "homepage": "https://github.com/siyu1011/paperclip-zh-cn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/siyu1011/paperclip-zh-cn/issues"
+  }
+}
