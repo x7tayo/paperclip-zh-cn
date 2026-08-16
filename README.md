@@ -1,5 +1,8 @@
 # paperclip-zh-cn — Paperclip UI 汉化插件
 
+> 🚀 **使用者请看这里**：[📖 安装使用指南（一页版）](USER-GUIDE.md) —— 只想要安装和使用，读这一份就够了。
+
+
 给 [paperclipai/paperclip](https://github.com/paperclipai/paperclip) 的 React UI 提供**全局中文翻译**的官方插件。
 
 - **形态**：Paperclip 插件系统安装的 `ui` 插件（非改源码补丁）
