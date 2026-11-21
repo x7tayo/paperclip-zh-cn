@@ -218,7 +218,7 @@ export function startEngine(options: EngineOptions): void {
   // 剪枝已脱离文档的节点，避免内存增长
   pruneDetached();
   // 初始全量扫描
-  walk(root);
+  if (enabled) walk(root);
   syncTitle();
   if (observer) observer.disconnect();
   observer = new MutationObserver((records) => {

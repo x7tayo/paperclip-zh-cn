@@ -20,7 +20,7 @@ function placeholders(s) {
 
 const merged = {};
 let batches = 0;
-for (const name of readdirSync(dictDir).sort()) {
+for (const name of readdirSync(dictDir).sort((a, b) => a.localeCompare(b, "en", { numeric: true }))) {
   if (!/^batch-\d+\.json$/.test(name)) continue;
   const data = JSON.parse(readFileSync(join(dictDir, name), "utf8"));
   batches += 1;

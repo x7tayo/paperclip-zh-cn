@@ -12,11 +12,20 @@ import { getEnabled, setEnabled as persistEnabled, onChange as onStorageChange }
 import { zhCnDictionary } from "./dictionary/zh-cn";
 
 
-export function ZhCnOverlay(): null {
+let mountedSlots = 0;
+
+function useTranslationEngine(): void {
   useEffect(() => {
-    startEngine({ dictionary: zhCnDictionary });
-    return () => stopEngine(false);
+    // Settings renders the toolbar slot without rendering the app sidebar.
+    if (mountedSlots++ === 0) startEngine({ dictionary: zhCnDictionary });
+    return () => {
+      if (--mountedSlots === 0) stopEngine(false);
+    };
   }, []);
+}
+
+export function ZhCnOverlay(): null {
+  useTranslationEngine();
   return null;
 }
 
@@ -44,6 +53,7 @@ const TOGGLE_HOVER: Record<string, string | number> = {
 };
 
 export function ZhToggle(): ReactNode {
+  useTranslationEngine();
   const [on, setOn] = useState<boolean>(() => getEnabled());
   const [hover, setHover] = useState(false);
 
