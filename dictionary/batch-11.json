@@ -43,6 +43,7 @@
   "Allow company-sponsored fast responses": "允许组织承担快速回复费用",
   "Allow short acknowledgements while agents begin work. Configure them in Settings → Connections.": "智能体开始工作时可以先发送简短回复。可在「设置 → 连接」中配置。",
   "Any of my agents": "我管理的任一智能体",
+  "Anyone except creator": "发起者以外的任何人",
   "Anything left paused here stays visible on the company's Agents and Routines pages, which offer the same resume actions — nothing is lost if you leave this page.": "留在暂停状态的项目仍可在组织的「智能体」或「例行任务」页面找到并恢复。离开此页不会丢失这些项目。",
   "Applies to executions that start preparation after saving.": "适用于保存后开始准备的运行。",
   "Artifacts V1": "产物 V1",

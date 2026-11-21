@@ -296,6 +296,7 @@ export const zhCnDictionary: Record<string, string> = {
   "Any risk": "任何风险",
   "Anyone": "任何人",
   "Anyone (default)": "任何人（默认）",
+  "Anyone except creator": "发起者以外的任何人",
   "Anyone holding an active token below, restricted by the rules in the bound profile.": "持有下方活跃令牌的任何人，受绑定配置文件中的规则限制。",
   "Anyone you've added to Paperclip.": "你添加到 Paperclip 的任何人。",
   "Anything left paused here stays visible on the company's Agents and Routines pages, which offer the same resume actions — nothing is lost if you leave this page.": "留在暂停状态的项目仍可在组织的「智能体」或「例行任务」页面找到并恢复。离开此页不会丢失这些项目。",
